@@ -1,14 +1,6 @@
 import React from 'react';
 import { useSpring, useSprings, config } from 'react-spring';
-import {
-  Container,
-  VideoBackground,
-  Overlay,
-  Content,
-  Intro,
-  IntroWord,
-  Subtitle
-} from './LandingStyles';
+import * as useStyles from './LandingStyles';
 
 const Landing = () => {
 
@@ -33,6 +25,16 @@ const Landing = () => {
       delay: 2000
     });
   };
+
+  const {
+    Container,
+    VideoBackground,
+    Overlay,
+    Content,
+    Intro,
+    IntroWord,
+    Subtitle
+  } = useStyles;
 
   return (
     <Container>
