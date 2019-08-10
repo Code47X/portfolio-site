@@ -10,6 +10,8 @@ export const BadgesContainer = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  max-width: 1400px;
+  margin: auto;
 `;
 
 export const FlexRow = styled.div`
@@ -41,6 +43,10 @@ export const Icon = styled.div`
 
 export const Background = styled(BackgroundSvg)`
   width: 100px;
+
+  @media ${device.laptop} {
+    width: 140px;
+  };
 `;
 
 const IconCenter = styled.div`
@@ -48,6 +54,11 @@ const IconCenter = styled.div`
   position: absolute;
   width: 45px;
   height: 45px;
+
+  @media ${device.laptop} {
+    width: 60px;
+    height: 60px;
+  };
 `;
 
 export const FastIcon = IconCenter.withComponent(FastSvg);
@@ -60,6 +71,11 @@ export const Title = styled.h4`
   font-weight: bold;
   margin: 0px;
   margin-bottom: 7px;
+
+  @media ${device.laptop} {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+  };
 `;
 
 export const Text = styled.p`
@@ -74,4 +90,8 @@ export const Text = styled.p`
   @media ${device.tablet} {
     width: auto;
   };
+
+  @media ${device.laptop} {
+    font-size: 1.1rem;
+  }
 `;
