@@ -12,23 +12,24 @@ export const Container = styled.div`
 
 export const VideoBackground = styled.div`
   position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100vh;
   z-index: -1;
 
   > video {
+    position: fixed;
     object-fit: cover;
     width: 100%;
-    height: 100%;
+    height: 100vh;
   };
 `;
 
 export const Overlay = styled.div`
-  position: absolute;
-  top: 0;
-  left: 0;
+  position: fixed;
   width: 100%;
-  height: 100%;
+  height: 100vh;
 
   background: ${props => {
     if (props.type === 'color')

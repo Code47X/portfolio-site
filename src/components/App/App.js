@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import Landing from '../Landing/Landing';
+import About from '../About/About';
 
 const App = () => {
   return (
-    <Landing />
+    <Fragment>
+      <Landing />
+      <About />
+    </Fragment>
   );
 };
 
