@@ -9,8 +9,8 @@ import { device } from '../../../utility/breakpoints';
 export const BadgesContainer = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
-  max-width: 1400px;
+  justify-content: space-around;
+  max-width: 1600px;
   margin: auto;
 `;
 
@@ -45,7 +45,7 @@ export const Background = styled(BackgroundSvg)`
   width: 100px;
 
   @media ${device.laptop} {
-    width: 140px;
+    width: 130px;
   };
 `;
 
@@ -56,8 +56,8 @@ const IconCenter = styled.div`
   height: 45px;
 
   @media ${device.laptop} {
-    width: 60px;
-    height: 60px;
+    width: 55px;
+    height: 55px;
   };
 `;
 
@@ -67,7 +67,7 @@ export const ResponsiveIcon = IconCenter.withComponent(ResponsiveSvg);
 export const CodeIcon = IconCenter.withComponent(CodeSvg);
 
 export const Title = styled.h4`
-  font-family: 'Electrolize', sans-serif;
+  font-family: 'Blinker', sans-serif;
   font-weight: bold;
   margin: 0px;
   margin-bottom: 7px;
@@ -79,7 +79,7 @@ export const Title = styled.h4`
 `;
 
 export const Text = styled.p`
-  font-family: 'Electrolize', sans-serif;
+  font-family: 'Blinker', sans-serif;
   font-weight: normal;
   font-size: 0.8rem;
   text-align: center;

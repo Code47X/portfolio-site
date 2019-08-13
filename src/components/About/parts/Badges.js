@@ -21,7 +21,7 @@ const Badges = () => {
     <BadgesContainer>
       <FlexRow>
         <Badge>
-          <Title>Fast</Title>
+          <Title>Blazing Fast</Title>
           <Icon>
             <Background />
             <FastIcon />
@@ -59,7 +59,7 @@ const Badges = () => {
             <CodeIcon />
           </Icon>
           <Text>
-            Take the time to do it right!
+            Practice makes perfect.
           </Text>
         </Badge>
       </FlexRow>

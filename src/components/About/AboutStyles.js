@@ -31,7 +31,6 @@ export const TitleText = styled.div`
 
 export const Content = styled.div`
   background-color: white;
-  padding-top: 100px;
 
   /* TODO: Just for scroll testing */
   height: 10000px;

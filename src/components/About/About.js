@@ -1,5 +1,6 @@
 import React from 'react';
 import Badges from './parts/Badges';
+import Description from './parts/Description';
 import * as useStyles from './AboutStyles';
 
 const About = () => {
@@ -19,6 +20,7 @@ const About = () => {
         <TitleText>About</TitleText>
       </TitleBar>
       <Content>
+        <Description />
         <Badges />
       </Content>
     </Container>
