@@ -67,8 +67,9 @@ export const ResponsiveIcon = IconCenter.withComponent(ResponsiveSvg);
 export const CodeIcon = IconCenter.withComponent(CodeSvg);
 
 export const Title = styled.h4`
-  font-family: 'Blinker', sans-serif;
+  font-family: ${props => props.theme.fonts.secondary};
   font-weight: bold;
+  color: white;
   margin: 0px;
   margin-bottom: 7px;
 
@@ -79,9 +80,10 @@ export const Title = styled.h4`
 `;
 
 export const Text = styled.p`
-  font-family: 'Blinker', sans-serif;
+  font-family: ${props => props.theme.fonts.secondary};
   font-weight: normal;
   font-size: 0.8rem;
+  color: white;
   text-align: center;
   margin: 0px;
   margin-top: 15px;

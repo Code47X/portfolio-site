@@ -15,22 +15,22 @@ export const TabImg = styled(TabSvg)`
   height: 35px;
   width: 100%;
   max-width: 300px;
-  fill: white;
+  fill: ${props => props.theme.colors.aboutBg};
   stroke-opacity: 0;
 `
 
 export const TitleText = styled.div`
-  font-family: 'Electrolize', sans-serif;
+  font-family: ${props => props.theme.fonts.primary};
   font-size: 2.5rem;
-  color: black;
+  color: white;
   position: absolute;
   top: 15px;
   padding-bottom: 5px;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid white;
 `;
 
 export const Content = styled.div`
-  background-color: white;
+  background-color: ${props => props.theme.colors.aboutBg};
 
   /* TODO: Just for scroll testing */
   height: 10000px;

@@ -6,9 +6,10 @@ export const Container = styled.div`
 `;
 
 export const TextHead = styled.h3`
-  font-family: 'Blinker', sans-serif;
+  font-family: ${props => props.theme.fonts.secondary};
   font-size: 1.3rem;
   text-align: center;
+  color: ${props => props.theme.colors.primary};
   margin: 0px 0px 15px;
 
   @media ${device.tablet} {
@@ -17,9 +18,10 @@ export const TextHead = styled.h3`
 `;
 
 export const TextBody = styled.p`
-  font-family: 'Blinker', sans-serif;
+  font-family: ${props => props.theme.fonts.secondary};
   font-size: 1rem;
   line-height: 1.6;
+  color: ${props => props.theme.colors.primary};
   text-align: center;
   width: 90%;
   max-width: 430px;

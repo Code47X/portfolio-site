@@ -53,11 +53,11 @@ export const Intro = styled.div`
 `
 
 export const IntroWord = styled(animated.div)`
-  font-family: 'Electrolize', sans-serif;
+  font-family: ${props => props.theme.fonts.primary};
   font-size: 2.5rem;
   font-weight: bold;
   padding: 0px 6px;
-  color: ${props => props.highlight ? '#00ffff' : 'white'};
+  color: ${props => props.highlight ? props.theme.colors.primary : 'white'};
 
   @media ${device.tablet} {
     font-size: 3rem;
@@ -73,7 +73,7 @@ export const IntroWord = styled(animated.div)`
 `;
 
 export const Subtitle = styled(animated.div)`
-  font-family: 'Electrolize', sans-serif;
+  font-family: ${props => props.theme.fonts.primary};
   color: white;
   font-size: 1rem;
   margin-top: 15px;
