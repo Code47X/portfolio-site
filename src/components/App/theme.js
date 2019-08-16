@@ -6,7 +6,7 @@ const theme = {
 
   colors: {
     primary: "#00ffff",
-    aboutBg: "#444444"
+    aboutBg: "#156898"
   }
 }
 

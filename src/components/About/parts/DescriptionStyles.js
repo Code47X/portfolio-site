@@ -3,13 +3,13 @@ import { device } from '../../../utility/breakpoints';
 
 export const Container = styled.div`
   padding: 130px 0px 115px;
+  color: black;
 `;
 
 export const TextHead = styled.h3`
   font-family: ${props => props.theme.fonts.secondary};
   font-size: 1.3rem;
   text-align: center;
-  color: ${props => props.theme.colors.primary};
   margin: 0px 0px 15px;
 
   @media ${device.tablet} {
@@ -21,7 +21,6 @@ export const TextBody = styled.p`
   font-family: ${props => props.theme.fonts.secondary};
   font-size: 1rem;
   line-height: 1.6;
-  color: ${props => props.theme.colors.primary};
   text-align: center;
   width: 90%;
   max-width: 430px;

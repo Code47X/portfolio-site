@@ -21,21 +21,21 @@ const Badges = () => {
     <BadgesContainer>
       <FlexRow>
         <Badge>
-          <Title>Blazing Fast</Title>
           <Icon>
             <Background />
             <FastIcon />
           </Icon>
+          <Title>Blazing Fast</Title>
           <Text>
             Loading times? No thanks.
           </Text>
         </Badge>
         <Badge>
-          <Title>Responsive</Title>
           <Icon>
             <Background />
             <ResponsiveIcon />
           </Icon>
+          <Title>Responsive</Title>
           <Text>
             Any device. Any time.
           </Text>
@@ -43,21 +43,21 @@ const Badges = () => {
       </FlexRow>
       <FlexRow>
         <Badge>
-          <Title>Minimalist</Title>
           <Icon>
             <Background />
             <MinimalIcon />
           </Icon>
+          <Title>Minimalist</Title>
           <Text>
             Sometimes less is more.
           </Text>
         </Badge>
         <Badge>
-          <Title>Clean Code</Title>
           <Icon>
             <Background />
             <CodeIcon />
           </Icon>
+          <Title>Clean Code</Title>
           <Text>
             Practice makes perfect.
           </Text>

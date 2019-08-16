@@ -9,7 +9,7 @@ import { device } from '../../../utility/breakpoints';
 export const BadgesContainer = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
   max-width: 1600px;
   margin: auto;
 `;
@@ -18,7 +18,7 @@ export const FlexRow = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 390px;
+  height: 350px;
 
   @media ${device.mobile} {
     flex-direction: row;
@@ -70,12 +70,10 @@ export const Title = styled.h4`
   font-family: ${props => props.theme.fonts.secondary};
   font-weight: bold;
   color: white;
-  margin: 0px;
-  margin-bottom: 7px;
+  margin: 10px 0px;
 
   @media ${device.laptop} {
     font-size: 1.3rem;
-    margin-bottom: 10px;
   };
 `;
 
@@ -86,10 +84,9 @@ export const Text = styled.p`
   color: white;
   text-align: center;
   margin: 0px;
-  margin-top: 15px;
-  width: 100px;
+  width: 150px;
 
-  @media ${device.tablet} {
+  @media ${device.mobile} {
     width: auto;
   };
 
