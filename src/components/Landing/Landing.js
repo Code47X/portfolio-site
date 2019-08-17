@@ -1,6 +1,6 @@
 import React from 'react';
 import { useSpring, useSprings, config } from 'react-spring';
-import * as useStyles from './LandingStyles';
+import * as styledComponents from 'styles/Landing/Landing';
 
 const Landing = () => {
 
@@ -34,7 +34,7 @@ const Landing = () => {
     Intro,
     IntroWord,
     Subtitle
-  } = useStyles;
+  } = styledComponents;
 
   return (
     <Container>

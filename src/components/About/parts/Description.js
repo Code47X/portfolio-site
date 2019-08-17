@@ -1,5 +1,5 @@
 import React from 'react'
-import * as useStyles from './DescriptionStyles';
+import * as styledComponents from 'styles/About/parts/Description';
 
 const Description = () => {
 
@@ -7,7 +7,7 @@ const Description = () => {
     Container,
     TextHead,
     TextBody
-  } = useStyles;
+  } = styledComponents;
 
   return (
     <Container>
@@ -18,7 +18,7 @@ const Description = () => {
         I'm a full-stack web developer and hobbyist VR developer from Austin, TX.
         I started out working primarly with Ruby on Rails, but over time have shifted
         more into the JavaScript ecosystem. I believe programming is as much an art as
-        it is a science, and always strive to write the best code possible.
+        a science, and always strive to write the best code possible.
       </TextBody>
     </Container>
   );

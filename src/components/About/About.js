@@ -1,29 +1,18 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import Section from '../shared/Section';
 import Badges from './parts/Badges';
 import Description from './parts/Description';
-import * as useStyles from './AboutStyles';
+import { ThemeContext } from 'styled-components';
 
-const About = () => {
+const About = (props) => {
 
-  const {
-    Container,
-    TitleBar,
-    TabImg,
-    TitleText,
-    Content
-  } = useStyles;
+  const theme = useContext(ThemeContext);
 
   return (
-    <Container>
-      <TitleBar>
-        <TabImg preserveAspectRatio="none" />
-        <TitleText>About</TitleText>
-      </TitleBar>
-      <Content>
-        <Description />
-        <Badges />
-      </Content>
-    </Container>
+    <Section title="About" bgColor={theme.sectionColors.about}>
+      <Description />
+      <Badges />
+    </Section>
   );
 
 }

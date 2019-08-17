@@ -1,9 +1,9 @@
 import styled from 'styled-components';
-import { device } from '../../../utility/breakpoints';
+import { device } from 'utility/breakpoints';
 
 export const Container = styled.div`
-  padding: 130px 0px 115px;
-  color: black;
+  margin: 50px 0px 120px;
+  color: white;
 `;
 
 export const TextHead = styled.h3`
@@ -14,7 +14,7 @@ export const TextHead = styled.h3`
 
   @media ${device.tablet} {
     font-size: 1.5rem;
-  }
+  };
 `;
 
 export const TextBody = styled.p`

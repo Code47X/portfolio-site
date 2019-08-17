@@ -1,5 +1,5 @@
 import React from 'react';
-import * as useStyles from './BadgesStyles';
+import * as styledComponents from 'styles/About/parts/Badges';
 
 const Badges = () => {
 
@@ -15,7 +15,7 @@ const Badges = () => {
     CodeIcon,
     Title,
     Text
-  } = useStyles;
+  } = styledComponents;
 
   return (
     <BadgesContainer>

@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { ReactComponent as TabSvg } from '../../img/tab.svg';
+import { ReactComponent as TabSvg } from 'svg/tab.svg';
 
 export const Container = styled.div`
   width: 100%;
@@ -7,31 +7,33 @@ export const Container = styled.div`
 
 export const TitleBar = styled.div`
   position: relative;
-  bottom: -1px;
   display: flex;
   justify-content: center;
-`
-export const TabImg = styled(TabSvg)`
+`;
+
+export const TitleTab = styled(TabSvg)`
+  position: relative;
+  bottom: -1px;
   height: 35px;
   width: 100%;
   max-width: 300px;
-  fill: ${props => props.theme.colors.aboutBg};
   stroke-opacity: 0;
-`
+`;
 
-export const TitleText = styled.div`
+export const Title = styled.h3`
   font-family: ${props => props.theme.fonts.primary};
   font-size: 2.5rem;
-  color: white;
+  font-weight: normal;
+  color: black;
+  margin: 0;
   position: absolute;
   top: 15px;
   padding-bottom: 5px;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid black;
 `;
 
 export const Content = styled.div`
-  background-color: ${props => props.theme.colors.aboutBg};
-
-  /* TODO: Just for scroll testing */
-  height: 10000px;
-`
+  width: 100%;
+  padding: 100px 0px;
+  background-color: ${props => props.bgColor};
+`;

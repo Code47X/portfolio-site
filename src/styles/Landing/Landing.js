@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { animated } from 'react-spring';
-import { device } from '../../utility/breakpoints';
+import { device } from 'utility/breakpoints';
 
 export const Container = styled.div`
   width: 100%;
@@ -57,7 +57,7 @@ export const IntroWord = styled(animated.div)`
   font-size: 2.5rem;
   font-weight: bold;
   padding: 0px 6px;
-  color: ${props => props.highlight ? props.theme.colors.primary : 'white'};
+  color: ${props => props.highlight ? '#2c78a5' : 'white'};
 
   @media ${device.tablet} {
     font-size: 3rem;

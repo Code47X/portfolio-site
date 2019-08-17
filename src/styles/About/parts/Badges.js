@@ -1,15 +1,15 @@
 import styled from 'styled-components';
-import { ReactComponent as BackgroundSvg } from '../../../img/swirl.svg';
-import { ReactComponent as FastSvg } from '../../../img/fast.svg';
-import { ReactComponent as MinimalSvg } from '../../../img/minimal.svg';
-import { ReactComponent as ResponsiveSvg } from '../../../img/responsive.svg';
-import { ReactComponent as CodeSvg } from '../../../img/code.svg';
-import { device } from '../../../utility/breakpoints';
+import { ReactComponent as BackgroundSvg } from 'svg/swirl.svg';
+import { ReactComponent as FastSvg } from 'svg/fast.svg';
+import { ReactComponent as MinimalSvg } from 'svg/minimal.svg';
+import { ReactComponent as ResponsiveSvg } from 'svg/responsive.svg';
+import { ReactComponent as CodeSvg } from 'svg/code.svg';
+import { device } from 'utility/breakpoints';
 
 export const BadgesContainer = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-around;
   max-width: 1600px;
   margin: auto;
 `;
@@ -18,7 +18,7 @@ export const FlexRow = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 350px;
+  height: 385px;
 
   @media ${device.mobile} {
     flex-direction: row;
