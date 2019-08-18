@@ -4,7 +4,7 @@ import Badges from './parts/Badges';
 import Description from './parts/Description';
 import { ThemeContext } from 'styled-components';
 
-const About = (props) => {
+const About = () => {
 
   const theme = useContext(ThemeContext);
 

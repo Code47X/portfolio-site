@@ -6,7 +6,8 @@ const theme = {
   },
 
   sectionColors: {
-    about: "#144d6f"
+    about: "#144d6f",
+    skills: "#616161"
   },
 
 }
