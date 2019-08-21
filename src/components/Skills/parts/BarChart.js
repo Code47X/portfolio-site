@@ -22,7 +22,7 @@ const BarChart = (props) => {
           <Bar key={index}>
             <BarLabel>{skill.label}</BarLabel>
             <BarBackground>
-              <BarForeground amount={skill.amount} />
+              <BarForeground amount={skill.amount}>{skill.amount}</BarForeground>
             </BarBackground>
           </Bar>
         ))}
