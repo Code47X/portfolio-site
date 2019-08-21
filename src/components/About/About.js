@@ -9,7 +9,7 @@ const About = () => {
   const theme = useContext(ThemeContext);
 
   return (
-    <Section title="About" bgColor={theme.sectionColors.about}>
+    <Section first title="About" bgColor={theme.sectionColors.about}>
       <Description />
       <Badges />
     </Section>

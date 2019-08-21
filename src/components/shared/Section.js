@@ -11,10 +11,10 @@ const Section = (props) => {
     Content
   } = styledComponents;
 
-  const { title, bgColor, children } = props;
+  const { first, title, bgColor, children } = props;
 
   return (
-    <Container>
+    <Container first={first}>
       <TitleBar>
         <TitleTab fill={bgColor} preserveAspectRatio="none" />
         <Title>{title}</Title>

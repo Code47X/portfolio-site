@@ -2,6 +2,8 @@ import styled from 'styled-components';
 import { ReactComponent as TabSvg } from 'svg/tab.svg';
 
 export const Container = styled.div`
+  position: relative;
+  top: ${props => props.first ? '0px' : '-35px'};
   width: 100%;
 `;
 
@@ -34,6 +36,6 @@ export const Title = styled.h3`
 
 export const Content = styled.div`
   width: 100%;
-  padding: 100px 0px;
+  padding: 100px 0px 160px;
   background-color: ${props => props.bgColor};
 `;

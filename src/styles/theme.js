@@ -7,7 +7,7 @@ const theme = {
 
   sectionColors: {
     about: "#144d6f",
-    skills: "#616161"
+    skills: "#3e3737"
   },
 
   barChartColors: {

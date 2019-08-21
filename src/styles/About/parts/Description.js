@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { device } from 'utility/breakpoints';
 
 export const Container = styled.div`
-  margin: 50px 0px 120px;
+  margin: 30px 0px 120px;
   color: white;
 `;
 
