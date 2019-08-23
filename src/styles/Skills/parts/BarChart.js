@@ -63,6 +63,7 @@ export const BarForeground = styled.div`
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  font-family: ${props => props.theme.fonts.primary};
   font-size: 0.8rem;
   padding-right: 7px;
 
