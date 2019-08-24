@@ -14,6 +14,11 @@ const theme = {
     labelBg: "#008787",
     barBg: "#868686",
     barFg: "#00ffff",
+  },
+
+  ribbonColors: {
+    ribbonBg: "red",
+    textColor: "white"
   }
 
 }

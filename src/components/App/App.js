@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react';
+import CornerRibbon from '../shared/CornerRibbon';
 import Landing from '../Landing/Landing';
 import About from '../About/About';
 import Skills from '../Skills/Skills';
@@ -9,6 +10,7 @@ const App = () => {
   return (
     <ThemeProvider theme={theme}>
       <Fragment>
+        <CornerRibbon />
         <Landing />
         <About />
         <Skills />
