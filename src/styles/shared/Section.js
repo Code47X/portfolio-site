@@ -3,12 +3,13 @@ import { ReactComponent as TabSvg } from 'svg/tab.svg';
 
 export const Container = styled.div`
   position: relative;
-  top: ${props => props.first ? '0px' : '-35px'};
   width: 100%;
 `;
 
 export const TitleBar = styled.div`
-  position: relative;
+  width: 100%;
+  position: absolute;
+  top: -35px;
   display: flex;
   justify-content: center;
 `;
