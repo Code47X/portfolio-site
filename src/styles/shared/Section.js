@@ -4,6 +4,7 @@ import { ReactComponent as TabSvg } from 'svg/tab.svg';
 export const Container = styled.div`
   position: relative;
   width: 100%;
+  margin-top: ${props => props.first ? '35px' : '0px'};
 `;
 
 export const TitleBar = styled.div`
