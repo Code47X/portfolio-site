@@ -39,11 +39,12 @@ export const Overlay = styled.div`
   }};
 `;
 
-export const Content = styled.div`
+export const Content = styled(animated.div)`
+  position: fixed;
+  top: 35vh;
   display: flex;
   flex-direction: column;
   text-align: center;
-  margin-bottom: 15vh;
 `;
 
 export const Intro = styled.div`
